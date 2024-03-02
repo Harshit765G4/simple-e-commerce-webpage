@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-commerce Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">E-commerce</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <input class="form-control ng-pristine ng-valid ng-empty ng-touched" qa="searchBar" type="text" 
+          ng-model="vm.searchPhrase" ng-change="vm.debouncedsearchProducts()" ng-keypress="($event.which === 13)? vm.userManualSearch():0" 
+          id="input" ng-attr-placeholder="{[{::vm.searchPlaceholder}]}" placeholder="Search for Products.." 
+          style="width: 25vw;padding: 10px 17px;border: 0.5px solid grey;
+          background: #f0f7fd;border-radius: 10px;padding-top: 3px;padding-bottom: 3px;padding-left: 20px;">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://media.gq.com/photos/63233d7c8b78ce2d64b8c8a7/16:9/w_2560%2Cc_limit/AppleWATCH_HP.jpg" class="card-img-top" alt="Product 1">
+            <div class="card-body">
+              <p class="card-text">APPLE WATCH</p>
+              <p class="card-text">Rs. 75,000</p>
+              <a href="#" class="btn btn-success">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/q/y/u/-original-imagmg6ggzazdevx.jpeg?q=90&crop=false" class="card-img-top" alt="Product 2">
+            <div class="card-body">
+              <p class="card-text">SAMSUNG S23 ULTRA</p>
+              <p class="card-text">Rs. 1,35,000</p>
+              <a href="#" class="btn btn-success">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://www.digitaltrends.com/wp-content/uploads/2022/10/apple-ipad-10th-gen-2022-review-14.jpg?resize=1200%2C630&p=1" class="card-img-top" alt="Product 3">
+            <div class="card-body">
+              <p class="card-text">APPLE IPAD</p>
+              <p class="card-text">Rs. 40,000</p>
+              <a href="#" class="btn btn-success">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
