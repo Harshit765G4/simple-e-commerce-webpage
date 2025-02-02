@@ -13,7 +13,7 @@ This repository contains the code for a straightforward e-commerce website built
 
 ## Preview
 
-![E-commerce Site Preview](preview.png)
+Include Preview of Page
 
 ## How to Use
 
