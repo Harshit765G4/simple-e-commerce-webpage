@@ -1,4 +1,4 @@
-# simple-e-commerce-webpage
+# Simple-E-Commerce-Webpage
 
 # Simple E-commerce Site
 
